@@ -21,21 +21,21 @@ export function MovieDetails() {
 
     return(
         <div className="detailsContainer">
-        <img src={imageUrl} alt={movie.title} className="col movieImage"/>
-        <div className="col movieDetails">
-          <p className="title">
-            
-            {movie.title}
-          </p>
-          <p>
-            <strong>Género: </strong>
-            {generos.name}
-          </p>
-          <p>
-            <strong>Descripción: </strong>
-            {movie.overview}
-          </p>
-        </div>
+          <img src={imageUrl} alt={movie.title} className="col movieImage"/>
+              <div className="col movieDetails">
+                <p className="title">
+                  
+                  {movie.title}
+                </p>
+                <p>
+                  <strong>Género: </strong>
+                  {generos.name}
+                </p>
+                <p>
+                  <strong>Descripción: </strong>
+                  {movie.overview}
+                </p>
+          </div>
       </div>
     )
 }
